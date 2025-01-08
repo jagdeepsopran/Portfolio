@@ -17,7 +17,7 @@
 <body class="">
   <!-- Navbar -->
   <nav class="text-white h-16">
-    <div class="fixed top-0 z-[100] bg-gray-800 container mx-auto flex justify-between items-center py-4 px-6">
+    <div class="fixed top-0 z-[100] bg-gray-800 w-full flex justify-between items-center flex-col sm:flex-row py-4 px-6">
       <a href="#" class="text-2xl font-bold">JAGDEEP SOPRAN</a>
       <ul class="flex text-xl space-x-6">
         <li><a href="#intro" class="hover:text-blue-700">Home</a></li>
@@ -33,11 +33,11 @@
   </nav>
 
   <!-- Intro Section -->
-  <header class="flex justify-around" id="intro">
-    <img src="J_photo.png" class="w-[35%] overflow-hidden" id="Jagdeep" />
-    <div class="flex flex-col items-between justify-center gap-8 h-[90vh] w-[50%] text-xl p-6">
+  <header class="flex justify-around flex-col sm:flex-row" id="intro">
+    <img src="J_photo.png" class="w-[35%] md:block sm:hidden hidden overflow-hidden" id="Jagdeep" />
+    <div class="flex flex-col items-between justify-center gap-8 sm:h-[90%] h-[90%] sm:w-[100%] w-[100%] text-xl sm:p-12 py-12 px-2">
       <p class="text-2xl">
-        <span class="bg-blue-700 text-white px-4 py-2 rounded mr-4">Hello</span>I'm
+        <span class="bg-blue-700 text-white  px-4 py-2 rounded mr-4">Hello</span>I'm
       </p>
       <div class="flex flex-col gap-8">
         <h1 class="text-6xl font-bold">Jagdeep Sopran</h1>
@@ -53,18 +53,18 @@
       </p>
       <div class="flex gap-8">
         <a href="mailto:jagdeepsopran@gmail.com"
-          class="bg-blue-700 text-white px-4 py-2 rounded hover:text-blue-700 hover:bg-white hover:border hover:border-blue-700">Say
+          class="bg-blue-700 text-white p-4 rounded hover:text-blue-700 hover:bg-white hover:border hover:border-blue-700">Say
           Hello</a>
         <a href="jagdeep_full_stack.pdf"
-          class="bg-blue-700 text-white px-4 py-2 rounded hover:text-blue-700 hover:bg-white hover:border hover:border-blue-700">
+          class="bg-blue-700 text-white p-4 rounded hover:text-blue-700 hover:bg-white hover:border hover:border-blue-700">
           Download Resume</a>
       </div>
     </div>
   </header>
 
   <!-- About Section -->
-  <section class="flex justify-around items-center h-[90vh] p-6" id="about">
-    <div class="flex flex-col justify-center items-center gap-8 w-[60%]">
+  <section class="flex justify-around items-center sm:h-[90vh] p-6" id="about">
+    <div class="flex flex-col justify-center items-center gap-8 sm:w-[60%]">
       <div>
         <h2 class="text-6xl text-center font-semibold">
           About<span class="text-blue-700">Me</span>
@@ -84,7 +84,7 @@
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="grid place-items-center h-screen bg-gray-200">
+  <section id="skills" class="grid place-items-center h-full py-8 bg-gray-200">
     <div class="container mx-auto text-center">
       <h2 class="font-bold text-6xl mb-8">Skills</h2>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
@@ -141,7 +141,7 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="h-screen py-16">
+  <section id="projects" class="h-full py-16">
     <div class="container mx-auto text-center">
       <h2 class="font-bold text-6xl mb-16">Projects</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
